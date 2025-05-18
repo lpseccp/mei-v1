@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Declaração Anual MEI</title>
+</head>
+<body>
+  <h1>Declaração Anual MEI (DASN-SIMEI)</h1>
+  <form id="declaracao-form">
+    <label for="ano">Ano base:</label>
+    <input type="number" id="ano" min="2009" required />
+
+    <label for="faturamento">Faturamento (R$):</label>
+    <input type="number" id="faturamento" step="0.01" required />
+
+    <label for="funcionario">Teve funcionário?</label>
+    <select id="funcionario" required>
+      <option value="não">Não</option>
+      <option value="sim">Sim</option>
+    </select>
+
+    <label for="entregue">Entregue?</label>
+    <input type="checkbox" id="entregue" />
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <h2>Histórico de Declarações</h2>
+  <ul id="lista-declaracoes"></ul>
+
+  <a href="index.html">Voltar</a>
+
+  <script src="declaracao.js"></script>
+</body>
+</html>

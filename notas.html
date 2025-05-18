@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Notas Fiscais - MEI</title>
+</head>
+<body>
+  <h1>Notas Fiscais Emitidas</h1>
+  <form id="notas-form">
+    <label for="data">Data:</label>
+    <input type="date" id="data" required />
+
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" required />
+
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" required />
+
+    <label for="valor">Valor (R$):</label>
+    <input type="number" id="valor" step="0.01" required />
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <h2>Histórico de Notas</h2>
+  <ul id="lista-notas"></ul>
+
+  <a href="index.html">Voltar</a>
+
+  <script src="notas.js"></script>
+</body>
+</html>
